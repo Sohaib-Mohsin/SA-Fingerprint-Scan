@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_avatar"
+        android:elevation="5dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_below="@id/image"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:id="@+id/username"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_width="62dp"
+        android:layout_height="22dp"
+        android:text="View"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_view"
+        android:id="@+id/view"
+        android:textSize="12sp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:paddingEnd="5dp"
+        android:background="@drawable/view_bg"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:text="Form Submitted"
+        android:textSize="11sp"
+        android:elevation="2dp"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_bg_user" />
+
+</RelativeLayout>

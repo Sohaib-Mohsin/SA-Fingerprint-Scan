@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_avatar"
+        android:elevation="5dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_below="@id/image"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:id="@+id/username"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:weightSum="2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:id="@+id/edit"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_edit_24"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/delete"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_bg_user" />
+
+</RelativeLayout>

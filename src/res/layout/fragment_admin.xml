@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AdminFragment"
+    android:padding="10dp">
+
+    <EditText
+        android:textColor="@color/solid_blue"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_bg"
+        android:elevation="5dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:textColor="@color/solid_blue"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_bg"
+        android:elevation="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn2_shape"
+        android:padding="17dp"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textColor="@color/solid_blue"
+        android:layout_below="@id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?" />
+
+</RelativeLayout>

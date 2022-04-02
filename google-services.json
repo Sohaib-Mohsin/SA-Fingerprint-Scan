@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207081648753",
+    "project_id": "sa-fingerprint-scan",
+    "storage_bucket": "sa-fingerprint-scan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207081648753:android:09c8690962c15b2de961d0",
+        "android_client_info": {
+          "package_name": "com.biometric.safingerprintscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207081648753-v7meg3jqt0vutsbm1s9be694ms8jvt4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGx2yZpuZKNzFSKfcU0zBIhs6Lqs8YRck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207081648753-v7meg3jqt0vutsbm1s9be694ms8jvt4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
